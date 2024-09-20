@@ -93,9 +93,8 @@ const Home = () => {
                <Col lg='6'>
                   <div className="experience__content">
                      <Subtitle subtitle={'Experience'} />
-                     <h2>With our all experience <br /> we will serve you</h2>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        <br /> Quas aliquam, hic tempora inventore suscipit unde. </p>
+                     <h2>With our all experience <br /> we will serve you the best</h2>
+                     <p>We offer a wide range of services from hajj, Umrah, hotels, flight, visa services of a premium quality, at a cheaper rate without any compromise quality We are 24 x 7 round the clock, available for your services.</p>
                   </div>
 
                   <div className="counter__wrapper d-flex align-items-center gap-5">

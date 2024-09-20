@@ -10,14 +10,13 @@ const NewsLetter = () => {
             <Row>
                <Col lg='6'>
                   <div className="newsletter__content">
-                     <h2>Subcribe now to get useful traveling information</h2>
+                     <h2>Subcribe now to get updates of our latest offers !</h2>
 
                      <div className="newsletter__input">
                         <input type="email" placeholder='Enter your email' />
                         <button className="btn newsletter__btn">Subcribe</button>
                      </div>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Obcaecati adipisici sunt in, provident facere ipsam?
+                     <p> Exclusive offers and bundles tailored just for you, perfect for sharing with your family and friends.
                      </p>
                   </div>
                </Col>

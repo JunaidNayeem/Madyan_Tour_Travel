@@ -8,18 +8,18 @@ import customizationImg from '../assets/images/customization.png'
 const servicesData = [
    {
       imgUrl: weatherImg,
-      title: `Calculate Weather`,
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      title: `Hajj & Umrah tours`,
+      desc: `Multiple package for pilgrimage which suits you the best`,
    },
    {
       imgUrl: guideImg,
       title: `Best Tour Guide`,
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      desc: `Over all experienced guides provided for al the activity covered during pilgrimage`,
    },
    {
       imgUrl: customizationImg,
       title: 'Customization',
-      desc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
+      desc: `Easy customization packs and bundles accordiing to your comfort zone`,
    },
 ]
 

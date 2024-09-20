@@ -57,7 +57,7 @@ const Header = () => {
                   {/* ========================== */}
 
                   {/* ========== MENU START ========== */}
-                  <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+                  {/* <div className="navigation" ref={menuRef} onClick={toggleMenu}>
                      <ul className="menu d-flex align-items-center gap-5">
                         {
                            nav__links.map((item, index) => (
@@ -67,7 +67,7 @@ const Header = () => {
                            ))
                         }
                      </ul>
-                  </div>
+                  </div> */}
                   {/* ================================ */}
 
                   <div className="nav__right d-flex align-items-center gap-4">
