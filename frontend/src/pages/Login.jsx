@@ -9,20 +9,25 @@ import { BASE_URL } from '../utils/config'
 
 const Login = () => {
    const [credentials, setCredentials] = useState({
-      email: undefined,
-      password: undefined
+      email: '',
+      password: ''
    })
+   
 
    const {dispatch} = useContext(AuthContext)
    const navigate = useNavigate()
 
    const handleChange = e => {
-      setCredentials(prev => ({ ...prev, [e.target.id]: e.target.value }))
+      const {id,value}=e.target;
+      setCredentials(prev => ({ ...prev, [id]: value }))
    }
 
    const handleClick = async e => {
       e.preventDefault()
-
+      if (!credentials.email || !credentials.password) {
+         alert('Please fill in both email and password fields');
+         return;
+       }
       dispatch({type:'LOGIN_START'})
 
       try {
@@ -36,12 +41,19 @@ const Login = () => {
          })
 
          const result = await res.json()
-         if(!res.ok) alert(result.message)
-         console.log(result.data)
-
+         if(!res.ok){
+            console.error("loginError",result);
+            alert(result.message)
+         console.log(result.data);
+         return;
+      }
+      else{
          dispatch({type:"LOGIN_SUCCESS", payload:result.data})
-         navigate('/')
+         navigate('/');
+      }
       } catch(err) {
+         console.log("fetch Eror",err);
+         alert(err.message)
          dispatch({type:"LOGIN_FAILURE", payload:err.message})
       }
    }

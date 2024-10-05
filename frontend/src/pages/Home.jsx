@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/home.css'
-import { Container, Row, Col, CardSubtitle } from 'reactstrap'
+import { Container, Row, Col, } from 'reactstrap'
 import heroImg from '../assets/images/hero-img01.jpg'
 import heroImg02 from '../assets/images/hero-img02.jpg'
 import heroVideo from '../assets/images/hero-video.mp4'
@@ -12,7 +12,7 @@ import SearchBar from './../shared/SearchBar'
 import ServiceList from '../services/ServiceList'
 import FeaturedTourList from '../components/Featured-tours/FeaturedTourList'
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery'
-import Testimonials from '../components/Testimonial/Testimonials'
+import Testimonials from '../components/OurServices/OurServices'
 import NewsLetter from '../shared/Newsletter'
 
 const Home = () => {
@@ -44,7 +44,7 @@ const Home = () => {
                </Col>
                <Col lg='2'>
                   <div className="hero__img-box hero__video-box mt-4">
-                     <video src={heroVideo} alt="" controls />
+                     <video src={heroVideo} alt="" autoPlay loop muted />
                   </div>
                </Col>
                <Col lg='2'>
@@ -138,13 +138,13 @@ const Home = () => {
       </section>
       {/* ========== GALLERY SECTION END ================ */}
 
-      {/* ========== TESTIMONIAL SECTION START ================ */}
+      {/* ========== OurServices SECTION START ================ */}
       <section>
          <Container>
             <Row>
                <Col lg='12'>
-                  <Subtitle subtitle={'Fans Love'} />
-                  <h2 className="testimonial__title">What our fans say about us</h2>
+                  <Subtitle subtitle={'OUR SERVICES'} />
+                  <p className="ourservice__title">We offer a wide range of services from hajj, Umrah, hotels, flight, visa services of a premium quality, at a cheaper rate without any compromise quality We are 24 x 7 round the clock, available for your services.</p>
                </Col>
                <Col lg='12'>
                   <Testimonials />
@@ -152,7 +152,7 @@ const Home = () => {
             </Row>
          </Container>
       </section>
-      {/* ========== TESTIMONIAL SECTION END ================== */}
+      {/* ========== OurServices SECTION END ================== */}
       <NewsLetter />
    </>
 }

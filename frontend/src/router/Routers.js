@@ -7,6 +7,12 @@ import Register from './../pages/Register'
 import SearchResultList from './../pages/SearchResultList'
 import TourDetails from './../pages/TourDetails'
 import Tours from './../pages/Tours'
+import HajjForm from '../components/Forms/HajjForm';
+import UmrahForm from '../components/Forms/UmrahForm';
+import VisaForm from '../components/Forms/VisaForm';
+import FlightForm from '../components/Forms/Flight';
+import HotelForm from '../components/Forms/HotelForm';
+import TransportForm from '../components/Forms/TransportForm';
 
 const Routers = () => {
    return (
@@ -19,6 +25,12 @@ const Routers = () => {
          <Route path='/register' element={<Register/>} />
          <Route path='/thank-you' element={<ThankYou/>} />
          <Route path='/tours/search' element={<SearchResultList/>} />
+         <Route path="/hajj-form" element={<HajjForm />} />
+        <Route path="/umrah-form" element={<UmrahForm />} />
+        <Route path="/visa-form" element={<VisaForm />} />
+        <Route path="/flight-form" element={<FlightForm />} />
+        <Route path="/hotel-form" element={<HotelForm />} />
+        <Route path="/transport-form" element={<TransportForm />} />
       </Routes>
    )
 }
